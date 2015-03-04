@@ -11,7 +11,7 @@ class UserRepository
      *
      * @param string $id
      *
-     * @return \StyleCI\StyleCI\Models\User|null
+     * @return Larahunt\Models\User|null
      */
     public function find($id)
     {
