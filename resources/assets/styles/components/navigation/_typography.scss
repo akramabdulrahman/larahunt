@@ -1,0 +1,21 @@
+.navigation {
+  color: $base-color;
+
+  @include max-screen(40rem) {
+    font-size: 1.5rem;
+  }
+
+  a {
+    color: $base-color;
+  }
+
+  h1 {
+    color: $dark-contrast-color;
+  }
+
+  .navigation--profile {
+	p {
+      color: $dark-contrast-color;
+    }
+  }
+}

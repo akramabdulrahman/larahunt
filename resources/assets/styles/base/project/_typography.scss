@@ -1,0 +1,73 @@
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+
+  color: $base-font-color;
+}
+
+p {
+  margin: 0;
+  margin-bottom: .5rem;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+
+  span {
+    font-weight: 400;
+    font-size: 1rem;
+    color: $semi-dark-contrast-color;
+    padding-left: .15rem;
+  }
+}
+
+h4, h4 a {
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  color: $heading-font-color;
+
+  &:hover {
+    color: $accent-color;
+  }
+
+  &:visited  {
+    color: $light-contrast-color;
+  }
+}
+
+address {
+}
+
+small {
+}
+
+a {
+  color: $base-link-color;
+  text-decoration: none;
+
+  transition: color $animation-duration ease-in-out;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}

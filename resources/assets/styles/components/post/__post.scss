@@ -1,0 +1,28 @@
+.post {
+	display: flex;
+
+	padding: .75rem 1rem .5rem;
+	margin-bottom: 1rem;
+
+	background: $base-color;
+	border-bottom: 2px solid $primary-border-color;
+
+	border-radius: 2px 2px 0 0;
+
+	header { flex: 9; }
+
+	footer {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		@include max-screen(40rem) { display: none; }
+
+		img {
+			max-width: 2.5rem;
+			max-height: 2.5rem;
+			border-radius: 50%;
+		}
+	}
+}

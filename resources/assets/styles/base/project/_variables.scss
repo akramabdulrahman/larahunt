@@ -1,0 +1,32 @@
+// Fonts -----------------------------------------------------------------------
+$base-font-family: avenir, helvetica-neue, helvetica, arial, sans-serif;
+$base-font-size: 16px;
+$base-line-height: 1.4;
+
+// URL -------------------------------------------------------------------------
+$base-image-path: '../images';
+
+// Colors ----------------------------------------------------------------------
+$base-color: #fff;
+$base-background-color: #f1f4f6;
+
+$accent-color: #ff6963;
+
+$light-contrast-color: #bbb;
+$medium-contrast-color: #e4e4e4;
+$semi-dark-contrast-color: #9f9f9f;
+$dark-contrast-color: #2f2f2f;
+
+$base-font-color: #525252;
+$heading-font-color: #534540;
+
+$primary-border-color: $medium-contrast-color;
+
+$base-link-color: $accent-color;
+
+// Breakpoints -----------------------------------------------------------------
+$small-screens: 30rem;
+$medium-screens: 48rem;
+
+// Animations ------------------------------------------------------------------
+$animation-duration: 100ms;

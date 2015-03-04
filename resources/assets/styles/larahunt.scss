@@ -1,0 +1,14 @@
+@charset 'UTF-8';
+
+// Dependencies
+@import 'normalize-scss/normalize';
+@import 'sass-mediaqueries/media-queries';
+
+// Variables, fonts, mixins, helpers... common styles used across the entire site
+@import 'base/__base';
+
+// Components (reusable/framework components)
+@import 'components/__components';
+
+// Specifics (more specific declarations, may be built on a per page basis)
+@import 'specifics/__specifics';

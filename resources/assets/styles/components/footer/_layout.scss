@@ -1,0 +1,13 @@
+.footer {
+	display: flex;
+	margin: 2rem 0 4rem;
+
+	ul {
+		display: flex;
+		flex: 1;
+	}
+
+	li {
+		margin-right: 1rem;
+	}
+}

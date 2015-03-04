@@ -1,0 +1,9 @@
+.footer {
+	a {
+		border-bottom: 2px solid transparent;
+
+		transition: border-color $animation-duration ease;
+
+		&:hover { border-color: $medium-contrast-color; }
+	}
+}
