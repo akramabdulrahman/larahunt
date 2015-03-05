@@ -17,7 +17,12 @@ class PostRoutes
     {
         $router->get('/', [
             'as' => 'home',
-            'uses' => 'PostsController@index',
+            'uses' => 'PostsController@handleHome',
+        ]);
+
+        $router->get('posts/create', [
+            'as' => 'create_post_path',
+            'uses' => 'PostsController@handleCreate',
         ]);
     }
 }

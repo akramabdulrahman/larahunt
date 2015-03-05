@@ -26,10 +26,15 @@ class PostsController extends AbstractController
      *
      * @return Response
      */
-    public function index()
+    public function handleHome()
     {
         $days = $this->postRepository->allGroupedByDays();
 
 		return view('posts.index', compact('days'));
 	}
+
+    public function handleCreate()
+    {
+        return view('posts.create');
+    }
 }

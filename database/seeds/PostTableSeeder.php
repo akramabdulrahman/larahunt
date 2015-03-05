@@ -22,7 +22,7 @@ class PostTableSeeder extends Seeder {
 			$post = Post::create([
 				'url' => $faker->url,
 				'title' => ucwords($faker->word(rand(3, 5))),
-				'content' => $faker->paragraph(1),
+				'description' => $faker->paragraph(1),
 				'created_at' => $date,
 				'updated_at' => $date,
 				'published_at' => $date,

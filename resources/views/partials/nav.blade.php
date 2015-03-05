@@ -3,7 +3,7 @@
 		@if (!$currentUser)
 			<li><a class="button--primary" href="{{route('auth_login_path')}}">Register</a></li>
 		@else
-			<li><a class="button--primary" href="/">New Post</a></li>
+			<li><a class="button--primary" href="{{route('create_post_path')}}">New Post</a></li>
 		@endif
 	</ul>
 
