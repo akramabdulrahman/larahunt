@@ -29,5 +29,15 @@ class AccountRoutes
             'as' => 'auth_logout_path',
             'uses' => 'AuthController@handleLogout',
         ]);
+
+        $router->get('account', [
+            'as'   => 'account_path',
+            'uses' => 'AccountController@handleShow',
+        ]);
+
+        $router->delete('account/delete', [
+            'as'   => 'account_delete_path',
+            'uses' => 'AccountController@handleDelete',
+        ]);
     }
 }

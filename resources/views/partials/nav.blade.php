@@ -1,6 +1,6 @@
 <nav class="navigation">
 	<ul>
-		<li><a href="/">New Post</a></li>
+		<li><a class="button--primary" href="/">New Post</a></li>
 	</ul>
 
 	<header>
@@ -9,14 +9,14 @@
 
 	<ul>
 		@if (!$currentUser)
-			<li><a href="{{route('auth_login_path')}}">Login with GitHub</a></li>
+			<li><a class="button--primary" href="{{route('auth_login_path')}}">Login with GitHub</a></li>
 		@else
 			<li class="navigation--profile">
-				<p>{{$currentUser->name}}</p>
-				<img src="{{$currentUser->gravatar}}">
+				<p><a href="{{route('account_path')}}">{{$currentUser->name}}</a></p>
+				<a href="{{route('account_path')}}"><img src="{{$currentUser->gravatar}}"></a>
 			</li>
 			<li>
-				<a href="{{route('auth_logout_path')}}">Logout</a>
+				<a class="button--primary" href="{{route('auth_logout_path')}}">Logout</a>
 			</li>
 		@endif
 	</ul>

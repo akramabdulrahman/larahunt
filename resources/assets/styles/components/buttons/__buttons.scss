@@ -1,12 +1,18 @@
+%button {
+  display: block;
+
+  padding: .25rem .75rem;
+
+  font-weight: 500;
+
+  border-radius: 2px;
+}
+
+.button--primary,
 %primary-button {
-	display: block;
+  @extend %button;
 
-	padding: .25rem .75rem;
+  background-color: $accent-color;
 
-	background-color: $accent-color;
-
-	color: $base-color;
-	font-weight: 500;
-
-	border-radius: 2px;
+  color: $base-color;
 }
