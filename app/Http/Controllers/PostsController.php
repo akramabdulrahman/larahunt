@@ -16,15 +16,17 @@ class PostsController extends AbstractController
      */
     function __construct(PostRepository $postRepository)
     {
+        parent::__construct();
+
         $this->postRepository = $postRepository;
 
-        $this->middleware('auth', ['only' => ['store', 'update', 'destroy']]);
+        $this->middleware('auth', ['only' => ['handleCreate']]);
     }
 
     /**
      * Display a listing of the resource.
      *
-     * @return Response
+     * @return \Illuminate\View\View
      */
     public function handleHome()
     {
@@ -33,8 +35,23 @@ class PostsController extends AbstractController
 		return view('posts.index', compact('days'));
 	}
 
+    /**
+     * Show the create form.
+     *
+     * @return \Illuminate\View\View
+     */
     public function handleCreate()
     {
         return view('posts.create');
+    }
+
+    /**
+     * Store a post in the database.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function handleStore()
+    {
+        return 'hello';
     }
 }

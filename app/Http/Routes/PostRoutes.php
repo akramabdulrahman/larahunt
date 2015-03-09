@@ -24,5 +24,10 @@ class PostRoutes
             'as' => 'create_post_path',
             'uses' => 'PostsController@handleCreate',
         ]);
+
+        $router->post('posts/store', [
+            'as' => 'store_post_path',
+            'uses' => 'PostsController@handleStore',
+        ]);
     }
 }

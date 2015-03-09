@@ -16,6 +16,8 @@ class AccountController extends AbstractController
      */
     public function __construct(Guard $auth)
     {
+        parent::__construct();
+
         $this->auth = $auth;
 
         $this->middleware('auth');

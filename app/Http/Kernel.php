@@ -15,7 +15,6 @@ class Kernel extends HttpKernel {
 		'Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse',
 		'Illuminate\Session\Middleware\StartSession',
 		'Illuminate\View\Middleware\ShareErrorsFromSession',
-		'Larahunt\Http\Middleware\VerifyCsrfToken',
 	];
 
 	/**
@@ -25,7 +24,7 @@ class Kernel extends HttpKernel {
 	 */
 	protected $routeMiddleware = [
 		'auth' => 'Larahunt\Http\Middleware\Authenticate',
-		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
+		'csrf'  => 'Larahunt\Http\Middleware\VerifyCsrfToken',
 		'guest' => 'Larahunt\Http\Middleware\RedirectIfAuthenticated',
 	];
 
