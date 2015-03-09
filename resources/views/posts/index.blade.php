@@ -8,6 +8,9 @@
 				<h3>{{$day}} <span>{{head($posts)->published_at->format('F jS')}}</span></h3>
 				@foreach($posts as $post)
 					<article class="post">
+						<aside>
+							<a href="">&#9650;</a>
+						</aside>
 						<header>
 							<h4>
 								<a href="{{$post->url}}" target="_blank">{{$post->title}}</a>
@@ -15,9 +18,11 @@
 							<p>{{$post->content}}</p>
 						</header>
 
+						@if ($post->user->gravatar)
 						<footer>
 							<img src="{{$post->user->gravatar}}" alt="{{$post->title}}">
 						</footer>
+						@endif
 					</article>
 				@endforeach
 			</section>

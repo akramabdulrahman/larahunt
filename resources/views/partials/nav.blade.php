@@ -1,8 +1,6 @@
 <nav class="navigation">
 	<ul>
-		@if (!$currentUser)
-			<li><a class="button--primary" href="{{route('auth_login_path')}}">Register</a></li>
-		@else
+		@if ($currentUser)
 			<li><a class="button--primary" href="{{route('create_post_path')}}">New Post</a></li>
 		@endif
 	</ul>
