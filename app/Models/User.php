@@ -6,13 +6,13 @@ use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Support\Facades\Hash;
+use Laracasts\Presenter\PresentableTrait;
 use Larahunt\Presenters\UserPresenter;
-use McCool\LaravelAutoPresenter\HasPresenter;
 
-class User extends Model implements AuthenticatableContract, HasPresenter
+class User extends Model implements AuthenticatableContract
 {
 
-    use Authenticatable;
+    use Authenticatable, PresentableTrait;
 
     /**
      * Indicates if the IDs are auto-incrementing.
@@ -43,6 +43,32 @@ class User extends Model implements AuthenticatableContract, HasPresenter
     protected $hidden = ['access_token', 'remember_token'];
 
     /**
+     * Get the presenter class.
+     *
+     * @var string
+     */
+    protected $presenter = 'Larahunt\Presenters\UserPresenter';
+
+    /**
+     * Appended attributes.
+     *
+     * @var array
+     */
+    protected $appends = ['gravatar'];
+
+    /**
+     * Add gravatar attribute.
+     *
+     * @return mixed
+     *
+     * @throws \Laracasts\Presenter\Exceptions\PresenterException
+     */
+    public function getGravatarAttribute()
+    {
+        return $this->present()->gravatar;
+    }
+
+    /**
      * Hash user passwords.
      *
      * @param $password
@@ -58,15 +84,5 @@ class User extends Model implements AuthenticatableContract, HasPresenter
     public function posts()
     {
         return $this->hasMany(Post::class);
-    }
-
-    /**
-     * Get the presenter class.
-     *
-     * @return string
-     */
-    public function getPresenterClass()
-    {
-        return UserPresenter::class;
     }
 }

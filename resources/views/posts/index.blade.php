@@ -17,7 +17,6 @@
 							</h4>
 							<p>{{$post->description}}</p>
 						</header>
-
 						@if ($post->user->gravatar)
 						<footer>
 							<img src="{{$post->user->gravatar}}" alt="{{$post->title}}">

@@ -147,11 +147,10 @@ return [
 		'Larahunt\Providers\RouteServiceProvider',
 
 		/*
-		 * Pacakage Service Providers...
+		 * Package Service Providers...
 		 */
 		'Laracasts\Generators\GeneratorsServiceProvider',
 		'Laravel\Socialite\SocialiteServiceProvider',
-		'McCool\LaravelAutoPresenter\LaravelAutoPresenterServiceProvider',
 	],
 
 	/*
