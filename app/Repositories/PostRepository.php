@@ -13,7 +13,7 @@ class PostRepository
      */
     public function all()
     {
-       return Post::where('published', true)
+        return Post::where('published', true)
            ->orderBy('published_at', 'desc')
            ->get();
     }

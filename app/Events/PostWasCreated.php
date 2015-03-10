@@ -2,16 +2,16 @@
 
 use Illuminate\Queue\SerializesModels;
 
-class PostWasCreated {
+class PostWasCreated
+{
 
-	use SerializesModels;
+    use SerializesModels;
 
-	/**
-	 * Create a new event instance.
-	 */
-	public function __construct()
-	{
-		//
-	}
-
+    /**
+     * Create a new event instance.
+     */
+    public function __construct()
+    {
+        //
+    }
 }

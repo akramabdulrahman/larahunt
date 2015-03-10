@@ -25,5 +25,4 @@ class ComposerServiceProvider extends ServiceProvider
     {
         $this->app->view->composer('*', 'Larahunt\Composers\CurrentUserComposer');
     }
-
 }

@@ -19,5 +19,4 @@ abstract class AbstractController extends Controller
     {
         $this->middleware('csrf', $csrf);
     }
-
 }

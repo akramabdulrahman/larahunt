@@ -32,5 +32,4 @@ class AccountController extends AbstractController
     {
         return view('pages.account');
     }
-
 }

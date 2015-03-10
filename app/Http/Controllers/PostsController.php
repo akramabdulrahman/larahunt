@@ -23,7 +23,7 @@ class PostsController extends AbstractController
      * @param Guard $auth
      * @param PostRepository $postRepository
      */
-    function __construct(Guard $auth, PostRepository $postRepository)
+    public function __construct(Guard $auth, PostRepository $postRepository)
     {
         parent::__construct();
 
@@ -42,8 +42,8 @@ class PostsController extends AbstractController
     {
         $days = $this->postRepository->allGroupedByDays();
 
-		return view('posts.index', compact('days'));
-	}
+        return view('posts.index', compact('days'));
+    }
 
     /**
      * Show the create form.
