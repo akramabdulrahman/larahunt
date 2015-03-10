@@ -8,15 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model {
 
 	/**
+	 * A list of methods protected from mass assignment.
+	 *
 	 * @var array
 	 */
-	protected $fillable = [
-		'title',
-		'description',
-		'url',
-		'user_id',
-		'published_at'
-	];
+	protected $guarded = ['_token', '_method'];
 
 	/**
 	 * @param $query
@@ -50,7 +46,7 @@ class Post extends Model {
 	 */
 	public function tags()
 	{
-		return $this->belongsToMany('Larahunt\Models\Tag')->withTimestamps();
+		return $this->belongsToMany(Tag::class)->withTimestamps();
 	}
 
 	/**
@@ -58,7 +54,7 @@ class Post extends Model {
 	 */
 	public function user()
 	{
-		return $this->belongsTo('Larahunt\Models\User');
+		return $this->belongsTo(User::class);
 	}
 
 }

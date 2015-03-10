@@ -1,6 +1,9 @@
 <?php namespace Larahunt\Http\Controllers;
 
+use Illuminate\Contracts\Auth\Guard;
+use Larahunt\Commands\CreatePostCommand;
 use Larahunt\Http\Requests;
+use Larahunt\Http\Requests\CreatePostRequest;
 use Larahunt\Post;
 use Larahunt\Repositories\PostRepository;
 
@@ -12,12 +15,19 @@ class PostsController extends AbstractController
     private $postRepository;
 
     /**
+     * @var Guard
+     */
+    private $auth;
+
+    /**
+     * @param Guard $auth
      * @param PostRepository $postRepository
      */
-    function __construct(PostRepository $postRepository)
+    function __construct(Guard $auth, PostRepository $postRepository)
     {
         parent::__construct();
 
+        $this->auth = $auth;
         $this->postRepository = $postRepository;
 
         $this->middleware('auth', ['only' => ['handleCreate']]);
@@ -48,10 +58,21 @@ class PostsController extends AbstractController
     /**
      * Store a post in the database.
      *
+     * @param CreatePostRequest $request
+     *
      * @return \Illuminate\View\View
      */
-    public function handleStore()
+    public function handleStore(CreatePostRequest $request)
     {
-        return 'hello';
+        $command = new CreatePostCommand(
+            $request->title,
+            $request->url,
+            $request->description,
+            $this->auth->user()
+        );
+
+        $this->dispatch($command);
+
+        return view('posts.confirmation');
     }
 }

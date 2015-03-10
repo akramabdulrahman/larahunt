@@ -16,7 +16,7 @@ class Tag extends Model {
 	 */
 	public function posts()
 	{
-		return $this->belongsToMany('Larahunt\Models\Post')->withTimestamps();
+		return $this->belongsToMany(Post::class)->withTimestamps();
 	}
 
 }

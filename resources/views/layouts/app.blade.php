@@ -12,6 +12,8 @@
 <body>
     @include('partials.nav')
 
+    @include('partials.messages')
+
 	@yield('content')
 
     @include('partials.footer')

@@ -56,7 +56,7 @@ class User extends Model implements AuthenticatableContract, HasPresenter {
 	 */
 	public function posts()
 	{
-		return $this->hasMany('Larahunt\Models\Post');
+		return $this->hasMany(Post::class);
 	}
 
 	/**
