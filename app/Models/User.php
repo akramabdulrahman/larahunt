@@ -57,7 +57,7 @@ class User extends Model implements AuthenticatableContract
     protected $appends = ['gravatar'];
 
     /**
-     * Add gravatar attribute.
+     * Add Gravatar attribute.
      *
      * @return mixed
      *
@@ -79,6 +79,8 @@ class User extends Model implements AuthenticatableContract
     }
 
     /**
+     * The user posts.
+     *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function posts()
@@ -86,8 +88,13 @@ class User extends Model implements AuthenticatableContract
         return $this->hasMany(Post::class);
     }
 
+    /**
+     * The user roles.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
     public function roles()
     {
-        return $this->hasMany(Role::class);
+        return $this->belongsToMany(Role::class);
     }
 }

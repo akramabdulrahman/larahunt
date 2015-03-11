@@ -18,12 +18,15 @@ class UserTableSeeder extends Seeder {
 
 		foreach(range(1, 10) as $i)
 		{
-			User::create([
+			$user = User::create([
+				'id' => $i,
 				'email' => $faker->email,
 				'username' => $faker->userName,
 				'name' => $faker->name,
 				'access_token' => Str::random(40)
 			]);
+
+			$user->roles()->attach(3);
 		}
 	}
 

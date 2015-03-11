@@ -37,9 +37,12 @@ class LoginCommandHandler
         $user->email = $command->getEmail();
         $user->username = $command->getUsername();
         $user->access_token = $command->getToken();
+
         $user->save();
 
         if ($new) {
+            $user->roles()->attach(3);
+
             event(new UserHasSignedUpEvent($user));
         }
 
