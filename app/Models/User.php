@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Support\Facades\Hash;
 use Laracasts\Presenter\PresentableTrait;
-use Larahunt\Presenters\UserPresenter;
+use Larahunt\Models\Role;
 
 class User extends Model implements AuthenticatableContract
 {
@@ -84,5 +84,10 @@ class User extends Model implements AuthenticatableContract
     public function posts()
     {
         return $this->hasMany(Post::class);
+    }
+
+    public function roles()
+    {
+        return $this->hasMany(Role::class);
     }
 }

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePostsTable extends Migration
+class CreateRoleUserPivotTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,17 +12,12 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table)
+        Schema::create('role_user', function (Blueprint $table)
         {
-            $table->increments('id');
-            $table->string('url');
-            $table->string('title');
-            $table->text('description');
-            $table->boolean('published')->default(false);
+            $table->integer('role_id')->unsigned()->index();
+            $table->foreign('role_id')->references('id')->on('roles')->onDelete('cascade');
             $table->integer('user_id')->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->timestamp('published_at')->nullable();
-            $table->timestamps();
         });
     }
 
@@ -33,6 +28,6 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('posts');
+        Schema::drop('role_user');
     }
 }

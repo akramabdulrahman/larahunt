@@ -6,7 +6,6 @@ use Illuminate\Http\RedirectResponse;
 
 class RedirectIfAuthenticated
 {
-
     /**
      * The Guard implementation.
      *
@@ -29,6 +28,7 @@ class RedirectIfAuthenticated
      *
      * @param  \Illuminate\Http\Request $request
      * @param  \Closure $next
+     *
      * @return mixed
      */
     public function handle($request, Closure $next)

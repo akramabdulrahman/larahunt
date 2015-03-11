@@ -11,8 +11,10 @@ class UserHasLoggedInEvent
 
     /**
      * The user that has logged in.
+     *
+     * @var \Larahunt\Models\User
      */
-    protected $user;
+    private $user;
 
     /**
      * Create a new user has logged in event instance.

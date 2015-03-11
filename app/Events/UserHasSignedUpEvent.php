@@ -11,13 +11,15 @@ class UserHasSignedUpEvent
 
     /**
      * The user that has signed up.
+     *
+     * @var \Larahunt\Models\User
      */
     protected $user;
 
     /**
      * Create a new user has signed up event instance.
      *
-     * @param User $user
+     * @param \Larahunt\Models\User $user
      */
     public function __construct(User $user)
     {
@@ -26,6 +28,8 @@ class UserHasSignedUpEvent
 
     /**
      * Get the user that has signed up.
+     *
+     * @return \Larahunt\Models\User $user
      */
     public function getUser()
     {

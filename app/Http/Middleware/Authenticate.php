@@ -5,7 +5,6 @@ use Illuminate\Contracts\Auth\Guard;
 
 class Authenticate
 {
-
     /**
      * The Guard implementation.
      *
@@ -16,8 +15,7 @@ class Authenticate
     /**
      * Create a new filter instance.
      *
-     * @param  Guard  $auth
-     * @return void
+     * @param  Guard $auth
      */
     public function __construct(Guard $auth)
     {
