@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Support\Facades\Hash;
 use Laracasts\Presenter\PresentableTrait;
-use Larahunt\Models\Role;
 
 class User extends Model implements AuthenticatableContract
 {

@@ -14,8 +14,12 @@ class PostRepository
     public function all()
     {
         return Post::where('published', true)
-           ->orderBy('published_at', 'desc')
-           ->get();
+            ->orderBy('published_at', 'desc')
+            ->get()
+            ->sortBy(function ($post) {
+                return $post->votes->count();
+            })
+            ->reverse();
     }
 
     /**
