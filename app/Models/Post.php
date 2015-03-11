@@ -43,6 +43,8 @@ class Post extends Model
     }
 
     /**
+     * Tags associated with the post.
+     *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
     public function tags()
@@ -51,6 +53,8 @@ class Post extends Model
     }
 
     /**
+     * The post author.
+     *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function user()
