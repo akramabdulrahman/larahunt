@@ -2,6 +2,7 @@
 
 namespace Larahunt\Http\Controllers;
 
+use Illuminate\Support\Facades\Redirect;
 use Larahunt\Commands\LoginCommand;
 use Larahunt\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
