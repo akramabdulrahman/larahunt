@@ -1,7 +1,3 @@
 @if ($errors->any())
-    <ul>
-    @foreach ($errors->all() as $error)
-        <li>{{$error}}</li>
-    @endforeach
-    </ul>
+    <p class="alert">{{$errors->first()}}</p>
 @endif

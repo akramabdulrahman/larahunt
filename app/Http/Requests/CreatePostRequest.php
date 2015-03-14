@@ -23,7 +23,7 @@ class CreatePostRequest extends Request
         return [
             'title' => 'required',
             'description' => 'required',
-            'url' => 'required',
+            'url' => 'required|url',
         ];
     }
 }
