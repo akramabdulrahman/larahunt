@@ -69,6 +69,6 @@ class AuthController extends AbstractController
     {
         $auth->logout();
 
-        return redirect('/');
+        return Redirect::route('home');
     }
 }

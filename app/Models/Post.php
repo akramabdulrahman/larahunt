@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-
     /**
      * A list of methods protected from mass assignment.
      *

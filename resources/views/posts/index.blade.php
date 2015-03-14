@@ -9,7 +9,7 @@
 				@foreach($posts as $post)
 					<article class="post">
 						<aside>
-							<a href="">&#9650;</a>
+							<a href="{{route('post_vote_path', $post->id)}}">&#9650;</a>
 							<span>{{$post->votes->count()}}</span>
 						</aside>
 						<header>

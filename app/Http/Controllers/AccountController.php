@@ -3,6 +3,7 @@
 namespace Larahunt\Http\Controllers;
 
 use Illuminate\Contracts\Auth\Guard;
+use Illuminate\Support\Facades\View;
 
 class AccountController extends AbstractController
 {
@@ -30,6 +31,6 @@ class AccountController extends AbstractController
      */
     public function handleShow()
     {
-        return view('pages.account');
+        return View::make('pages.account');
     }
 }

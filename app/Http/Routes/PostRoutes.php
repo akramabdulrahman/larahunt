@@ -29,5 +29,10 @@ class PostRoutes
             'as' => 'store_post_path',
             'uses' => 'PostsController@handleStore',
         ]);
+
+        $router->get('posts/{post}/vote', [
+            'as' => 'post_vote_path',
+            'uses' => 'VoteController@handle',
+        ]);
     }
 }
