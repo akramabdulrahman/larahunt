@@ -1,6 +1,5 @@
 <nav class="navigation">
 	<ul>
-		<li><a class="button--primary" href="{{route('about')}}">About</a></li>
 		@if ($currentUser)
 			<li><a class="button--primary" href="{{route('create_post_path')}}">New Post</a></li>
 		@endif

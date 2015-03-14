@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-	<div class="container posts">
+	<div class="posts">
 		<h2>The most popular Laravel news, packages and products, every day!</h2>
 		@foreach($days as $day => $posts)
 			<section>

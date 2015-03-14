@@ -30,6 +30,11 @@ class PostRoutes
             'uses' => 'PostsController@handleStore',
         ]);
 
+        $router->post('posts/{post}/edit', [
+            'as' => 'edit_post_path',
+            'uses' => 'PostsController@handleEdit',
+        ]);
+
         $router->get('posts/{post}/vote', [
             'as' => 'post_vote_path',
             'uses' => 'VoteController@handle',
