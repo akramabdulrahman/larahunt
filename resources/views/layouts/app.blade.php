@@ -8,6 +8,9 @@
 	<title>Larahunt - @yield('title', 'The most popular Laravel news, packages and products, every day!')</title>
 
 	<link href="/assets/styles/larahunt.css" rel="stylesheet">
+
+	<script src="//use.typekit.net/vyd6hio.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
     @include('partials.nav')
