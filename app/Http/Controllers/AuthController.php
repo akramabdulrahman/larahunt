@@ -45,12 +45,10 @@ class AuthController extends AbstractController
     {
         $user = $login->user();
 
-        dd($user);
-
         $command = new LoginCommand(
             array_get($user, 'id'),
             array_get($user, 'name'),
-            array_get($user, 'nickname'),
+            array_get($user, 'login'),
             array_get($user, 'email'),
             array_get($user, 'token')
         );
