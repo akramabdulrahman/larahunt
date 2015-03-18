@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Redirect;
 use Larahunt\Commands\LoginCommand;
 use Larahunt\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
+use Larahunt\Login\LoginProvider;
 use Larahunt\User;
 use Laravel\Socialite\GithubProvider;
 
@@ -24,39 +25,37 @@ class AuthController extends AbstractController
     /**
      * Connect to the GitHub provider using OAuth.
      *
-     * @param \Laravel\Socialite\GithubProvider $socialite
+     * @param \Larahunt\Login\LoginProvider $login
      *
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function handleLogin(GithubProvider $socialite)
+    public function handleLogin(LoginProvider $login)
     {
-        $socialite->scopes(['user:email']);
-
-        return $socialite->redirect();
+        return $login->redirect();
     }
 
     /**
      * Get the user access token to save notifications.
      *
-     * @param \Laravel\Socialite\GithubProvider $socialite
+     * @param \Larahunt\Login\LoginProvider $login
      *
      * @return \Illuminate\Http\Response
      */
-    public function handleCallback(GithubProvider $socialite)
+    public function handleCallback(LoginProvider $login)
     {
-        $socialiteUser = $socialite->user();
+        $user = $login->user();
 
         $command = new LoginCommand(
-            $socialiteUser->id,
-            $socialiteUser->name,
-            $socialiteUser->nickname,
-            $socialiteUser->email,
-            $socialiteUser->token
+            array_get($user, 'id'),
+            array_get($user, 'name'),
+            array_get($user, 'login'),
+            array_get($user, 'email'),
+            array_get($user, 'token')
         );
 
         $this->dispatch($command);
 
-        return redirect('/');
+        return Redirect::route('home');
     }
 
     /**

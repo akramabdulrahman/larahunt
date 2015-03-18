@@ -145,6 +145,7 @@ return [
 		'Larahunt\Providers\ConfigServiceProvider',
 		'Larahunt\Providers\EventServiceProvider',
 		'Larahunt\Providers\RouteServiceProvider',
+		'Larahunt\Login\LoginServiceProvider',
 
 		/*
 		 * Package Service Providers...
