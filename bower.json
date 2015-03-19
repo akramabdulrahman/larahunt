@@ -2,6 +2,7 @@
   "name": "larahunt",
   "devDependencies": {
     "normalize-scss": "~3.0.2",
-    "sass-mediaqueries": "~1.4.0"
+    "sass-mediaqueries": "~1.4.0",
+    "flexboxgrid": "~6.1.1"
   }
 }

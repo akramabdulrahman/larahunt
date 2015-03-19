@@ -1,16 +1,22 @@
-var name = 'larahunt';
+'use strict';
+
+var dest = './public/assets';
+var src = './resources/assets';
 
 module.exports = {
-    name: name,
-    src: {
-        root: './resources',
-        assets: './resources/assets'
+    styles: {
+        src: src + '/styles/**/*.{sass,scss}',
+        dest: dest,
+        settings: {
+            sourceComments: 'normal',
+            errLogToConsole: true,
+            imagePath: '/images'
+        }
     },
-    build: {
-        root: './public',
-        assets: './public/assets'
-    },
-    bower: {
-        root: './bower_components'
+
+    production: {
+        cssSrc: dest + '/*.css',
+        jsSrc: dest + '/*.js',
+        dest: dest
     }
 };

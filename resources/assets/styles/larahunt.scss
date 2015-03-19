@@ -1,8 +1,8 @@
 @charset 'UTF-8';
 
 // Dependencies
-@import 'normalize-scss/normalize';
-@import 'sass-mediaqueries/media-queries';
+@import '../../../bower_components/normalize-scss/normalize';
+@import '../../../bower_components/sass-mediaqueries/media-queries';
 
 // Variables, fonts, mixins, helpers... common styles used across the entire site
 @import 'base/__base';
