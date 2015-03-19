@@ -10,7 +10,6 @@ use Laracasts\Presenter\PresentableTrait;
 
 class User extends Model implements AuthenticatableContract
 {
-
     use Authenticatable, PresentableTrait;
 
     /**

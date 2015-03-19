@@ -20,6 +20,4 @@ class VoteRepository
             ->whereUserId($user->id)
             ->first();
     }
-
-
 }

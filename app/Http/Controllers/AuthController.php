@@ -4,11 +4,9 @@ namespace Larahunt\Http\Controllers;
 
 use Illuminate\Support\Facades\Redirect;
 use Larahunt\Commands\LoginCommand;
-use Larahunt\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Larahunt\Login\LoginProvider;
 use Larahunt\User;
-use Laravel\Socialite\GithubProvider;
 
 class AuthController extends AbstractController
 {

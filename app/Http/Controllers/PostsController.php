@@ -2,7 +2,6 @@
 
 use Illuminate\Contracts\Auth\Guard;
 use Larahunt\Commands\CreatePostCommand;
-use Larahunt\Http\Requests;
 use Larahunt\Http\Requests\CreatePostRequest;
 use Larahunt\Post;
 use Larahunt\Repositories\PostRepository;

@@ -12,8 +12,7 @@ class CreateRoleUserPivotTable extends Migration
      */
     public function up()
     {
-        Schema::create('role_user', function (Blueprint $table)
-        {
+        Schema::create('role_user', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('role_id')->unsigned()->index();
             $table->foreign('role_id')->references('id')->on('roles')->onDelete('cascade');

@@ -5,7 +5,6 @@ use Illuminate\Support\ServiceProvider;
 
 class BusServiceProvider extends ServiceProvider
 {
-
     /**
      * Bootstrap any application services.
      *

@@ -7,7 +7,6 @@ use Illuminate\Contracts\View\View;
 
 class CurrentUserComposer
 {
-
     /**
      * The authentication guard instance.
      *
