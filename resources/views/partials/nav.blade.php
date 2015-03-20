@@ -9,21 +9,17 @@
         <a href="/"><h1>Larahunt</h1></a>
     </header>
 
-    <div class="col-md-4 navigation--right">
-        @if ($currentUser)
-            <div class="profile col-md-4">
-                <a href="{{route('account_path')}}">{{$currentUser->name}}</a>
-                <a href="{{route('account_path')}}"><img src="{{$currentUser->gravatar}}"></a>
-            </div>
-            <div class="col-md-2">
+    <div class="col-md-4">
+        <div class="profile">
+            @if ($currentUser)
+                <a href="{{route('account_path')}}" class="profile--name">{{$currentUser->name}}</a>
+                <a href="{{route('account_path')}}" class="profile--image"><img src="{{$currentUser->gravatar}}"></a>
                 <a class="button" href="{{route('auth_logout_path')}}">Logout</a>
-            </div>
-        @endif
+            @endif
 
-        @if (!$currentUser)
-            <div class="col-md-12">
+            @if (!$currentUser)
                 <a class="button" href="{{route('auth_login_path')}}">Login with GitHub</a>
-            </div>
-        @endif
+            @endif
+        </div>
     </div>
 </nav>

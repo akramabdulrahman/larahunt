@@ -1,5 +1,5 @@
 .navigation {
-    padding: 1rem 0;
+    padding: 1rem;
     margin-bottom: 1rem;
 
     background-color: $base-color;
@@ -10,9 +10,17 @@
     }
 
     .profile {
-        a { float: left; }
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
+        a { margin-left: .5em; }
+    }
+
+    .profile--image {
         img {
+            display: block;
             width: 2em;
             height: 2em;
             border-radius: 50%;

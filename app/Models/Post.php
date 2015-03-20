@@ -18,7 +18,7 @@ class Post extends Model
     protected $guarded = ['_token', '_method'];
 
     /**
-     * Add dates.
+     * Add custom dates.
      *
      * @var array
      */

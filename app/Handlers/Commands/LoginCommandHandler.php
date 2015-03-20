@@ -41,8 +41,6 @@ class LoginCommandHandler
         $user->save();
 
         if ($new) {
-            $user->roles()->attach(3);
-
             event(new UserHasSignedUpEvent($user));
         }
 

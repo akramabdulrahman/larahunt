@@ -42,7 +42,7 @@ class User extends Model implements AuthenticatableContract
     protected $hidden = ['access_token', 'remember_token'];
 
     /**
-     * Add dates.
+     * Add custom dates.
      *
      * @var array
      */
