@@ -42,6 +42,13 @@ class User extends Model implements AuthenticatableContract
     protected $hidden = ['access_token', 'remember_token'];
 
     /**
+     * Add dates.
+     *
+     * @var array
+     */
+    protected $dates = ['deleted_at'];
+
+    /**
      * Get the presenter class.
      *
      * @var string

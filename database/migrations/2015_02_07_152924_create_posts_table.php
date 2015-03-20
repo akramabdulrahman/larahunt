@@ -20,6 +20,7 @@ class CreatePostsTable extends Migration
             $table->boolean('published')->default(false);
             $table->integer('user_id')->index();
             $table->timestamp('published_at')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

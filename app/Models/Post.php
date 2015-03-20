@@ -4,15 +4,25 @@ namespace Larahunt\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Post extends Model
 {
+    use SoftDeletes;
+
     /**
      * A list of methods protected from mass assignment.
      *
      * @var array
      */
     protected $guarded = ['_token', '_method'];
+
+    /**
+     * Add dates.
+     *
+     * @var array
+     */
+    protected $dates = ['deleted_at', 'published_at'];
 
     /**
      * @param $query
