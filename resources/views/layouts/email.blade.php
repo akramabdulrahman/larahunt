@@ -9,7 +9,7 @@
 @section('content')
 @show
 <p>
-Thank you, <br>
+Cheers, <br>
 Larahunt
 </p>
 </body>

@@ -1,60 +1,21 @@
 .navigation {
-  display: flex;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
 
-  padding: 1rem 0;
-  margin-bottom: 1rem;
+    background-color: $base-color;
+    border-bottom: 1px solid $primary-border-color;
 
-  background-color: $base-color;
-  border-bottom: 1px solid $primary-border-color;
-
-  header {
-    flex: 1;
-    text-align: center;
-  }
-
-  ul {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    padding: 0 1rem;
-
-    @include max-screen(40rem) {
-      flex-direction: column;
-
-      li {
-        margin: 0;
-      }
+    header {
+        text-align: center;
     }
 
-    &:first-child {
-      li {
-        margin-right: 1rem;
-      }
-    }
+    .profile {
+        a { float: left; }
 
-    &:last-child {
-      justify-content: flex-end;
-      li {
-        margin-left: 1rem;
-      }
+        img {
+            width: 2em;
+            height: 2em;
+            border-radius: 50%;
+        }
     }
-  }
-
-  .navigation--profile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: .5rem;
-
-    p {
-      padding-top: .5rem;
-      margin-right: 1rem;
-    }
-
-    img {
-      max-width: 2rem;
-      max-height: 2rem;
-      border-radius: 50%;
-    }
-  }
 }

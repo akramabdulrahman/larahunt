@@ -18,12 +18,3 @@ ul, ol {
 
 	margin: 0 auto;
 }
-
-.flex {
-	display: flex;
-
-	@include max-screen(40rem) {
-		flex-direction: column;
-	}
-}
-

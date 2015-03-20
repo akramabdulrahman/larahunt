@@ -17,15 +17,13 @@ class UserTableSeeder extends Seeder
         DB::table('users')->delete();
 
         foreach (range(1, 10) as $i) {
-            $user = User::create([
+            User::create([
                 'id' => $i,
                 'email' => $faker->email,
                 'username' => $faker->userName,
                 'name' => $faker->name,
                 'access_token' => Str::random(40)
             ]);
-
-            $user->roles()->attach(3);
         }
     }
 }

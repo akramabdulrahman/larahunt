@@ -152,6 +152,8 @@ return [
          */
         'Laracasts\Generators\GeneratorsServiceProvider',
         'Laravel\Socialite\SocialiteServiceProvider',
+        'GrahamCampbell\Core\CoreServiceProvider',
+
     ],
 
     /*

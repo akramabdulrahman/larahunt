@@ -5,12 +5,13 @@ namespace Larahunt\Models;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Hash;
 use Laracasts\Presenter\PresentableTrait;
 
 class User extends Model implements AuthenticatableContract
 {
-    use Authenticatable, PresentableTrait;
+    use Authenticatable, PresentableTrait, SoftDeletes;
 
     /**
      * Indicates if the IDs are auto-incrementing.
@@ -84,15 +85,5 @@ class User extends Model implements AuthenticatableContract
     public function posts()
     {
         return $this->hasMany(Post::class);
-    }
-
-    /**
-     * The user roles.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
-     */
-    public function roles()
-    {
-        return $this->belongsToMany(Role::class)->withTimestamps();
     }
 }

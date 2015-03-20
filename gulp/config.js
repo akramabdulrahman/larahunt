@@ -6,7 +6,7 @@ var src = './resources/assets';
 module.exports = {
     styles: {
         src: src + '/styles/**/*.{sass,scss}',
-        dest: dest,
+        dest: dest + '/styles',
         settings: {
             sourceComments: 'normal',
             errLogToConsole: true,

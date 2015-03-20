@@ -3,6 +3,11 @@
 // Dependencies
 @import '../../../bower_components/normalize-scss/normalize';
 @import '../../../bower_components/sass-mediaqueries/media-queries';
+@import '../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/clearfix';
+@import '../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/grid-framework';
+@import '../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/grid';
+@import '../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables';
+@import '../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/grid';
 
 // Variables, fonts, mixins, helpers... common styles used across the entire site
 @import 'base/__base';

@@ -1,5 +1,5 @@
 %button {
-  display: block;
+  display: inline-block;
 
   padding: .25rem .75rem;
 
@@ -9,7 +9,7 @@
   border: none;
 }
 
-.button--primary,
+.button,
 %primary-button {
   @extend %button;
 

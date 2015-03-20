@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('username')->unique();
             $table->string('email')->unique();
             $table->string('access_token', 40)->unique();
+            $table->timestamp('deleted_at');
             $table->rememberToken();
             $table->timestamps();
         });
