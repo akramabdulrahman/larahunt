@@ -9,4 +9,4 @@ The most popular Laravel news, packages and products, every day! https://larahun
 
 ## License
 
-The Larahunt application is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Larahunt is licensed under [The MIT License (MIT)](LICENSE).
