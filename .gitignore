@@ -1,4 +1,5 @@
 /vendor
 /public/assets
+phpunit.xml
 .env
 *.sqlite
