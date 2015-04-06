@@ -1,10 +1,19 @@
 <?php
 
+/*
+ * This file is part of Larahunt.
+ *
+ * (c) Vincent Klaiber <hello@vinkla.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Larahunt\Http\Controllers;
 
+use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Support\Facades\Redirect;
 use Larahunt\Commands\LoginCommand;
-use Illuminate\Contracts\Auth\Guard;
 use Larahunt\Login\LoginProvider;
 use Larahunt\User;
 

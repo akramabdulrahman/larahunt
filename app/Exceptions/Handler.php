@@ -1,4 +1,15 @@
-<?php namespace Larahunt\Exceptions;
+<?php
+
+/*
+ * This file is part of Larahunt.
+ *
+ * (c) Vincent Klaiber <hello@vinkla.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Larahunt\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
