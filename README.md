@@ -10,3 +10,5 @@ The most popular Laravel news, packages and products, every day! https://larahun
 ## License
 
 Larahunt is licensed under [The MIT License (MIT)](LICENSE).
+
+Larahunt contains code taken from StyleCI, also licensed under [The MIT License (MIT)](STYLECI).
