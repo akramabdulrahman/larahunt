@@ -14,8 +14,8 @@ namespace Larahunt\Http\Controllers;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Support\Facades\Redirect;
 use Larahunt\Commands\LoginCommand;
-use Larahunt\Login\LoginProvider;
 use Larahunt\User;
+use StyleCI\Login\LoginProvider;
 
 class AuthController extends AbstractController
 {
@@ -32,7 +32,7 @@ class AuthController extends AbstractController
     /**
      * Connect to the GitHub provider using OAuth.
      *
-     * @param \Larahunt\Login\LoginProvider $login
+     * @param \StyleCI\Login\LoginProvider $login
      *
      * @return \Illuminate\Http\RedirectResponse
      */
@@ -44,7 +44,7 @@ class AuthController extends AbstractController
     /**
      * Get the user access token to save notifications.
      *
-     * @param \Larahunt\Login\LoginProvider $login
+     * @param \StyleCI\Login\LoginProvider $login
      *
      * @return \Illuminate\Http\Response
      */

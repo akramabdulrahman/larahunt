@@ -15,7 +15,7 @@
 		"laravel/framework": "5.0.*",
 		"guzzlehttp/guzzle": "~5.2",
 		"laracasts/presenter": "0.2.*",
-		"larahunt/login": "~1.0",
+		"styleci/login": "0.1.*@dev",
 		"graham-campbell/core": "~2.0@dev"
 	},
 	"require-dev": {
