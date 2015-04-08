@@ -16,6 +16,13 @@ use Larahunt\Events\UserHasLoggedInEvent;
 use Larahunt\Events\UserHasSignedUpEvent;
 use Larahunt\Repositories\UserRepository;
 
+/**
+ * This is the login command handler class.
+ *
+ * @author Graham Campbell <graham@mineuk.com>
+ * @author Joseph Cohen <joseph.cohen@dinkbit.com>
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class LoginCommandHandler
 {
     /**

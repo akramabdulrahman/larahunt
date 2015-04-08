@@ -15,6 +15,11 @@ use Larahunt\Commands\PostVoteCommand;
 use Larahunt\Models\Vote;
 use Larahunt\Repositories\VoteRepository;
 
+/**
+ * This is the post vote command handler class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class PostVoteCommandHandler
 {
     /**

@@ -14,6 +14,12 @@ namespace Larahunt\Http\Controllers;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Support\Facades\View;
 
+/**
+ * This is the account controller class.
+ *
+ * @author Graham Campbell <graham@mineuk.com>
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class AccountController extends AbstractController
 {
     /**
@@ -22,7 +28,9 @@ class AccountController extends AbstractController
     protected $auth;
 
     /**
-     * @param Guard $auth
+     * Create a new account controller instance.
+     *
+     * @param \Illuminate\Contracts\Auth\Guard $auth
      */
     public function __construct(Guard $auth)
     {
@@ -36,7 +44,7 @@ class AccountController extends AbstractController
     /**
      * Show the user's account information.
      *
-     * @return View
+     * @return \Illuminate\View\View
      */
     public function handleShow()
     {

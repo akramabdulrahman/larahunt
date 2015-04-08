@@ -18,6 +18,11 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Hash;
 use Laracasts\Presenter\PresentableTrait;
 
+/**
+ * This is the user model class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class User extends Model implements AuthenticatableContract
 {
     use Authenticatable, PresentableTrait, SoftDeletes;

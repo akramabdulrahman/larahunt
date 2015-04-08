@@ -14,6 +14,11 @@ namespace Larahunt\Http\Middleware;
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
 
+/**
+ * This is the authenticate middleware class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class Authenticate
 {
     /**

@@ -13,6 +13,11 @@ namespace Larahunt\Repositories;
 
 use Larahunt\Models\Post;
 
+/**
+ * This is the post repository class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class PostRepository
 {
     /**

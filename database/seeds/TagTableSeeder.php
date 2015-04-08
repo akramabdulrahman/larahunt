@@ -13,6 +13,11 @@ use Illuminate\Database\Seeder;
 use Faker\Factory as Faker;
 use Larahunt\Models\Tag;
 
+/**
+ * This is the tag table seeder class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class TagTableSeeder extends Seeder
 {
     /**

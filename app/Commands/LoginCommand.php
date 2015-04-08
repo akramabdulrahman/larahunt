@@ -11,6 +11,13 @@
 
 namespace Larahunt\Commands;
 
+/**
+ * This is login command class.
+ *
+ * @author Graham Campbell <graham@mineuk.com>
+ * @author Joseph Cohen <joseph.cohen@dinkbit.com>
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class LoginCommand
 {
     /**

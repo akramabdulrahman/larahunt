@@ -16,6 +16,12 @@ use Illuminate\Http\Request;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\Security\Core\Util\StringUtils;
 
+/**
+ * This is the verify CSRF token middleware class.
+ *
+ * @author Graham Campbell <graham@mineuk.com>
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class VerifyCsrfToken
 {
     /**

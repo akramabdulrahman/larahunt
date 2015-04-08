@@ -13,6 +13,11 @@ use Illuminate\Database\Seeder;
 use Faker\Factory as Faker;
 use Larahunt\Models\Post;
 
+/**
+ * This is the post table seeder class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class PostTableSeeder extends Seeder
 {
     /**

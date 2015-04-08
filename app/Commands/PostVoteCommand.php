@@ -14,6 +14,11 @@ namespace Larahunt\Commands;
 use Larahunt\Models\Post;
 use Larahunt\Models\User;
 
+/**
+ * This is the post vote command class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class PostVoteCommand
 {
     /**

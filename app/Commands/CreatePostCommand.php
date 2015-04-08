@@ -13,6 +13,11 @@ namespace Larahunt\Commands;
 
 use Larahunt\Models\User;
 
+/**
+ * This is the create post command class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class CreatePostCommand
 {
     /**

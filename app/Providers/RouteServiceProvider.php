@@ -14,6 +14,12 @@ namespace Larahunt\Providers;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Routing\Router;
 
+/**
+ * This is the route service provider class.
+ *
+ * @author Graham Campbell <graham@mineuk.com>
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class RouteServiceProvider extends ServiceProvider
 {
     /**

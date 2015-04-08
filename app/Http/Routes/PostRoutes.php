@@ -13,6 +13,11 @@ namespace Larahunt\Http\Routes;
 
 use Illuminate\Contracts\Routing\Registrar;
 
+/**
+ * This is the post routes class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class PostRoutes
 {
     /**

@@ -13,6 +13,11 @@ namespace Larahunt\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * This is the vote model class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class Vote extends Model
 {
     /**

@@ -14,6 +14,11 @@ use Faker\Factory as Faker;
 use Illuminate\Support\Str;
 use Larahunt\Models\User;
 
+/**
+ * This is the user table seeder class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class UserTableSeeder extends Seeder
 {
     /**

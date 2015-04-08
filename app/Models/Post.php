@@ -15,6 +15,11 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
+/**
+ * This is the post model class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class Post extends Model
 {
     use SoftDeletes;

@@ -13,6 +13,11 @@ namespace Larahunt\Http\Controllers;
 
 use Illuminate\Support\Facades\View;
 
+/**
+ * This is the pages controller class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class PagesController extends AbstractController
 {
     /**

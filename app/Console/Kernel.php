@@ -14,6 +14,11 @@ namespace Larahunt\Console;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
+/**
+ * This is the console kernal class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class Kernel extends ConsoleKernel
 {
     /**

@@ -15,6 +15,12 @@ use Illuminate\Foundation\Bus\DispatchesCommands;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller;
 
+/**
+ * This is the abstract controller class.
+ *
+ * @author Graham Campbell <graham@mineuk.com>
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 abstract class AbstractController extends Controller
 {
     use DispatchesCommands, ValidatesRequests;

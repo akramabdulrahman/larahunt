@@ -15,6 +15,11 @@ use Larahunt\Models\Post;
 use Larahunt\Models\User;
 use Larahunt\Models\Vote;
 
+/**
+ * This is the vote repository class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class VoteRepository
 {
     /**

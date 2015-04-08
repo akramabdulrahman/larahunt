@@ -15,6 +15,11 @@ use Closure;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\RedirectResponse;
 
+/**
+ * This is the redirect if authenticated middleware class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class RedirectIfAuthenticated
 {
     /**

@@ -13,6 +13,11 @@ namespace Larahunt\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
+/**
+ * This is the http kernal class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class Kernel extends HttpKernel
 {
     /**

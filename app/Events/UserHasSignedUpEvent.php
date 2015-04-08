@@ -14,6 +14,11 @@ namespace Larahunt\Events;
 use Illuminate\Queue\SerializesModels;
 use Larahunt\Models\User;
 
+/**
+ * This is the user signed up event class.
+ *
+ * @author Graham Campbell <graham@mineuk.com>
+ */
 class UserHasSignedUpEvent
 {
     use SerializesModels;

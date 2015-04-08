@@ -11,7 +11,14 @@
 
 namespace Larahunt\Http\Requests;
 
-class CreatePostRequest extends Request
+use Illuminate\Foundation\Http\FormRequest;
+
+/**
+ * This is the create post validation request class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
+class CreatePostRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.

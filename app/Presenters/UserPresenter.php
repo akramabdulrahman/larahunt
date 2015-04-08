@@ -13,6 +13,11 @@ namespace Larahunt\Presenters;
 
 use Laracasts\Presenter\Presenter;
 
+/**
+ * This is the user presenter class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class UserPresenter extends Presenter
 {
     /**

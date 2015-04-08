@@ -18,6 +18,11 @@ use Illuminate\Support\Facades\Redirect;
 use Larahunt\Commands\PostVoteCommand;
 use Larahunt\Models\Post;
 
+/**
+ * This is the vote controller class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class VoteController extends AbstractController
 {
     /**

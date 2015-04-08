@@ -12,6 +12,11 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * This is the database seeder class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class DatabaseSeeder extends Seeder
 {
     /**

@@ -14,6 +14,11 @@ namespace Larahunt\Exceptions;
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
+/**
+ * This is the exception handler class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class Handler extends ExceptionHandler
 {
     /**

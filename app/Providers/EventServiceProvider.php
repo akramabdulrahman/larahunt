@@ -13,6 +13,11 @@ namespace Larahunt\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
+/**
+ * This is the event service provider class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class EventServiceProvider extends ServiceProvider
 {
     /**

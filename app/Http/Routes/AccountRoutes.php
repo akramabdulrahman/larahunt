@@ -13,6 +13,12 @@ namespace Larahunt\Http\Routes;
 
 use Illuminate\Contracts\Routing\Registrar;
 
+/**
+ * This is the account routes class.
+ *
+ * @author Graham Campbell <graham@mineuk.com>
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class AccountRoutes
 {
     /**

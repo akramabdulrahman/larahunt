@@ -17,6 +17,11 @@ use Larahunt\Http\Requests\CreatePostRequest;
 use Larahunt\Post;
 use Larahunt\Repositories\PostRepository;
 
+/**
+ * This is the post controller class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class PostsController extends AbstractController
 {
     /**

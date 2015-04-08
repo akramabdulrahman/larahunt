@@ -14,6 +14,13 @@ namespace Larahunt\Composers;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\View\View;
 
+/**
+ * This is the current user composer class.
+ *
+ * @author Graham Campbell <graham@mineuk.com>
+ * @author Joseph Cohen <joseph.cohen@dinkbit.com>
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class CurrentUserComposer
 {
     /**

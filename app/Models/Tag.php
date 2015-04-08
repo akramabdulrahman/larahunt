@@ -13,6 +13,11 @@ namespace Larahunt\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * This is the tag model class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class Tag extends Model
 {
     /**

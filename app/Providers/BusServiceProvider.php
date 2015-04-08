@@ -14,6 +14,11 @@ namespace Larahunt\Providers;
 use Illuminate\Bus\Dispatcher;
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * This is the bus service provider class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class BusServiceProvider extends ServiceProvider
 {
     /**

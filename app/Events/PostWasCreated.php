@@ -14,6 +14,11 @@ namespace Larahunt\Events;
 use Illuminate\Queue\SerializesModels;
 use Larahunt\Models\Post;
 
+/**
+ * This is the post was created event.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class PostWasCreated
 {
     use SerializesModels;

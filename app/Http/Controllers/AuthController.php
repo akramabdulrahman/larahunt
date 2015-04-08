@@ -17,6 +17,13 @@ use Larahunt\Commands\LoginCommand;
 use Larahunt\User;
 use StyleCI\Login\LoginProvider;
 
+/**
+ * This is the auth controller class.
+ *
+ * @author Graham Campbell <graham@mineuk.com>
+ * @author Joseph Cohen <joseph.cohen@dinkbit.com>
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class AuthController extends AbstractController
 {
     /**

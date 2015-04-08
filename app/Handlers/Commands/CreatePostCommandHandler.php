@@ -15,6 +15,11 @@ use Larahunt\Commands\CreatePostCommand;
 use Larahunt\Events\PostWasCreated;
 use Larahunt\Models\Post;
 
+/**
+ * This is the create post command handler class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class CreatePostCommandHandler
 {
     /**

@@ -13,6 +13,11 @@ namespace Larahunt\Repositories;
 
 use Larahunt\Models\User;
 
+/**
+ * This is the user repository class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class UserRepository
 {
     /**

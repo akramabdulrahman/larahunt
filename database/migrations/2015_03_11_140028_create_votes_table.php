@@ -12,6 +12,11 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+/**
+ * This is the create votes table migration class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class CreateVotesTable extends Migration
 {
     /**

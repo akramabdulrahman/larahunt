@@ -13,6 +13,11 @@ namespace Larahunt\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * This is the app service provider class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class AppServiceProvider extends ServiceProvider
 {
     /**

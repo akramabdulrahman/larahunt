@@ -13,6 +13,12 @@ namespace Larahunt\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * This is the view composer service provider class.
+ *
+ * @author Joseph Cohen <joseph.cohen@dinkbit.com>
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class ComposerServiceProvider extends ServiceProvider
 {
     /**
