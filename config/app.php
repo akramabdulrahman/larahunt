@@ -151,17 +151,15 @@ return [
         'Larahunt\Providers\AppServiceProvider',
         'Larahunt\Providers\BusServiceProvider',
         'Larahunt\Providers\ComposerServiceProvider',
-        'Larahunt\Providers\ConfigServiceProvider',
         'Larahunt\Providers\EventServiceProvider',
         'Larahunt\Providers\RouteServiceProvider',
-        'Larahunt\Login\LoginServiceProvider',
 
         /*
          * Package Service Providers...
          */
         'Laracasts\Generators\GeneratorsServiceProvider',
-        'Laravel\Socialite\SocialiteServiceProvider',
         'GrahamCampbell\Core\CoreServiceProvider',
+        'StyleCI\Login\LoginServiceProvider',
 
     ],
 
